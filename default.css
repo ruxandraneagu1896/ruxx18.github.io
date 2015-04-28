@@ -350,6 +350,9 @@
 	
 	#menu li:hover a, #menu li ul:hover 
 	{
+        display:block;
+        float:none;
+        
 	}
 	
 	#menu .current_page_item a
@@ -390,11 +393,12 @@
     text-align:left;
 }
 #menu li ul a:hover, .menu li ul li:hover a{
-    background:#ffffff;center left no-repeat;
+    background:#ffffff;
     border:1px;
     color:#F67C78;
     text-decoration:none;
     padding: 5px;
+    display:block;
 }
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -952,7 +956,6 @@ textarea
 
 /* Styles the submit button */
 #submit {
-	/* background:url(images/submit.png); */
 	width:127px;
 	height:48px;
 	text-align: center;
@@ -972,4 +975,35 @@ textarea
 .quote {
     font-style:oblique;
     margin-top: 20px;
+}
+.car {
+    width:1200px;
+    height:400px;
+}
+.stepcarousel{
+position:relative;
+border: 10px grey;
+overflow: scroll;
+width: 1200px; 
+height: 400px;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+align-content: center;
+margin-left:70px;
+margin-bottom:30px;
+margin-top:20px;
+padding: 4em 0em 3em 0em;
+}
+
+.stepcarousel .belt{
+position: absolute;
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{ 
+overflow: hidden;
+margin: 10px;
+position:relative;
 }
