@@ -9,7 +9,6 @@
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
 <body>
@@ -49,7 +48,7 @@
       <section class="corp">
           <p><i>Vrei să mă contactezi? Ai vreo sugestie sau ai vrea să contribui la dezvoltarea site-ului?</i></p>
             <p>Trimite-mi un mesaj și îți voi răspunde în cel mai scurt timp posibil. Mulțumesc.</p>
-	    <form>
+	    <form method="POST" action="form.php" by default method="get">
 		    <label></label>
 		    <input name="name" required="required" placeholder="Numele tau">
 		    
@@ -58,7 +57,7 @@
 		    <input name="email" type="email" required="required" placeholder="Email">
 		    <label></label>
 		    <textarea name="message" cols="20" rows="5" required="required" placeholder="Mesaj"></textarea>         
-		    <input id="submit" name="submit" type="submit" value="Trimite" onclick="alert('Mesajul tau a fost trimis')">                           
+		    <input id="submit" name="submit" type="submit" value="Trimite">                           
 	    </form>
     </section>
     <div id="wrapper2">
